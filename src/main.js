@@ -1,11 +1,12 @@
-'use strict';
+"use strict";
 
-function counter() {
-  let seconds = 0;
-  setInterval(() => {
-    seconds += 1;
-    document.getElementById('app').innerHTML = `<p>You have been here for ${seconds} seconds.</p>`;
-  }, 1000);
-}
+// prettier-ignore
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-counter();
+const form = document.querySelector(".form");
+const containerWorkouts = document.querySelector(".workouts");
+const inputType = document.querySelector(".form__input--type");
+const inputDistance = document.querySelector(".form__input--distance");
+const inputDuration = document.querySelector(".form__input--duration");
+const inputCadence = document.querySelector(".form__input--cadence");
+const inputElevation = document.querySelector(".form__input--elevation");
